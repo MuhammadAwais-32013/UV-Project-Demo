@@ -14,4 +14,8 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project.scripts]
-hello="example.hello:hello"
+hello="Hello.hello:hello"  
+
+main="Hello.hello:main" 
+[tool.hatch.build.targets.wheel]
+packages = ["src/Hello"]
